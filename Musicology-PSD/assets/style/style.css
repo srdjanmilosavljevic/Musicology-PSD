@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +12,7 @@
     --ff-primary: "Oswald";
     --ff-secondary: "Montserrat";
 
-    --fw-reg: 300;
+    --fw-reg: 400;
     --fw-bold: 900;
 
     --clr-dark: #303030;
@@ -18,7 +20,7 @@
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h3: 1.5rem;
     --fs-body: 1rem;
 
 }
@@ -66,7 +68,26 @@ header {
    background-repeat: no-repeat;
 }
 
-.navigacija {
+
+.bg-navigacija {
     background-color: var(--clr-dark);
-    width: auto;
 }
+nav ul li a {
+    font-size: var(--fs-h3);
+    color: white !important;
+    font-weight: var(--fw-reg);
+    text-transform: uppercase;
+    font-family: var(--ff-primary);
+}
+.navigacija {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+@media (max-width: 600px) {
+    .navigacija {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 1em;
+    }
+  }
