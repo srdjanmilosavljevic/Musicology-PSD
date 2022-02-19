@@ -61,4 +61,12 @@ h3 {font-size: var(--fs-h3);}
 
 header {
     background-image: url(/Musicology-PSD/assets/img/pozadina.png);
+   background-size: 100%;
+   height: 796px;
+   background-repeat: no-repeat;
+}
+
+.navigacija {
+    background-color: var(--clr-dark);
+    width: auto;
 }
